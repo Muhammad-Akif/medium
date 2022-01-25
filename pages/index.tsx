@@ -20,6 +20,9 @@ export default function Home() {
           </h2>
         </div>
       </div>
+      <img 
+      src="https://accountabilitylab.org/wp-content/uploads/2020/03/Medium-logo.png" 
+      alt="logo2" />
     </div>
   )
 }
