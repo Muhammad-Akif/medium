@@ -12,7 +12,7 @@ import {
  }
 
 // set up the client for fetching the data in the getProps page function
-
+export const sanityClient = createClient(config);
 
 // Helper Functions in sanity documentation /docs/image-url
 export const urlFor = (source) => createImageUrlBuilder(config).image(source);
