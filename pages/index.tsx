@@ -7,7 +7,8 @@ interface Props{
   posts: [post];
 }
 
-export default function Home(props: Props) {
+export default function Home({ posts }: Props) {
+  console.log("Posts --> ",posts);
   return (
     <div className="max-w-7xl mx-auto">
       <Head>
