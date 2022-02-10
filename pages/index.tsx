@@ -1,8 +1,13 @@
 import Head from 'next/head'
 import Header from '../components/Header'
 import { sanityClient } from '../sanity'
+import { post } from '../typings'
 
-export default function Home() {
+interface Props{
+  posts: [post];
+}
+
+export default function Home(props: Props) {
   return (
     <div className="max-w-7xl mx-auto">
       <Head>
