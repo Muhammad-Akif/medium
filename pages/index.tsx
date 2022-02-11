@@ -38,9 +38,9 @@ export default function Home({ posts }: Props) {
         {
           posts.map((post) => (
             <Link key={post._id} href={`/post/${post.slug.current}`}>
-              <div>
+              <div className="group border rounded-lg cursor-pointer overflow-hidden">
                 <img 
-                className="w-full h-60 object-cover group-hover:scale-105 transition-transform duration-200 ease-in-out"
+                className="h-60 object-cover group-hover:scale-105 transition-transform duration-200 ease-in-out"
                 src={urlFor(post.mainImage).url()!} 
                 alt="Post Image" 
                 />
