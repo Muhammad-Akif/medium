@@ -13,6 +13,12 @@ const Post = ({ post }: Props) => {
     return (
         <main>
             <Header />
+
+            <img
+                className="w-full h-40 object-cover"
+                src={urlFor(post.mainImage).url()!}
+                alt="Post Image"
+            />
         </main>
     )
 }
@@ -57,21 +63,21 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
         body
       }`;
 
-      const post = await sanityClient.fetch(query, {
-          slug: params?.slug,
-      })
+    const post = await sanityClient.fetch(query, {
+        slug: params?.slug,
+    })
 
-      if (!post) {
-          return {
-              notFound: true,
-          }
-      }
-      
-      return {
-          props: {
-              post,
-          },
-          revalidate: 60, //after 60 second, it will update the old cached versions
-      }
+    if (!post) {
+        return {
+            notFound: true,
+        }
+    }
+
+    return {
+        props: {
+            post,
+        },
+        revalidate: 60, //after 60 second, it will update the old cached versions
+    }
 }
 
