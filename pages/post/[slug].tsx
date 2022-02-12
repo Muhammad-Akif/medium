@@ -20,9 +20,9 @@ const Post = ({ post }: Props) => {
                 alt="Post Image"
             />
 
-            <article>
-                <h1>{post.title}</h1>
-                <h2>{post.description}</h2>
+            <article className="max-w-3xl mx-auto p-5">
+                <h1 className="text-3xl mt-10 mb-3">{post.title}</h1>
+                <h2 className="text-xl font-light  text-gray-500 mb-2">{post.description}</h2>
 
                 <div>
                     <img
