@@ -5,7 +5,9 @@ import { post } from "../../typings"
 
 const Post = () => {
     return (
-        <div>Post</div>
+        <main>
+            <Header />
+        </main>
     )
 }
 
