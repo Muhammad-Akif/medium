@@ -3,7 +3,12 @@ import Header from '../../components/Header'
 import { sanityClient, urlFor } from "../../sanity";
 import { post } from "../../typings"
 
-const Post = () => {
+interface Props {
+    post: post;
+}
+
+const Post = ({ post }: Props) => {
+    console.log("post ==> ",post)
     return (
         <main>
             <Header />
