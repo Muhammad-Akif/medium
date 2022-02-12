@@ -39,7 +39,7 @@ export const getStaticPaths = async () => {
     }
 }
 
-export const getStaticProps: GetStaticProps = async () => {
+export const getStaticProps: GetStaticProps = async ({ params }) => {
     const query = `*[_type == "post" && slug.current == $slug][0]{
         _id,
         _createdAt,
@@ -56,6 +56,9 @@ export const getStaticProps: GetStaticProps = async () => {
           approved == true],
         body
       }`;
-      
+
+      const post = await sanityClient.fetch(query, {
+          slug: params?.slug,
+      })
 }
 
