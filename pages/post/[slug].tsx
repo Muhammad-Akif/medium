@@ -19,6 +19,23 @@ const Post = ({ post }: Props) => {
                 src={urlFor(post.mainImage).url()!}
                 alt="Post Image"
             />
+
+            <article>
+                <h1>{post.title}</h1>
+                <h2>{post.description}</h2>
+
+                <div>
+                    <img
+                        src={urlFor(post.author.image).url()!}
+                        alt="author image"
+                    />
+                    <p>
+                        Blog post by {" "}
+                        <span>{post.author.name}</span> ~
+                        Published at {new Date(post._createdAt).toLocaleString}
+                    </p>
+                </div>
+            </article>
         </main>
     )
 }
