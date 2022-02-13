@@ -19,6 +19,8 @@ interface Props {
 
 const Post = ({ post }: Props) => {
     const [submitted, setSubmitted] = useState<boolean>(false)
+    console.log(" -->",post)
+
     const {
         register,
         handleSubmit,
