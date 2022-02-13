@@ -1,7 +1,7 @@
 export default {
     name: 'comment',
-    title: 'document',
-    type: 'Comment',
+    title: 'Comment',
+    type: 'document',
     fields: [
       {
         name: 'name',
@@ -23,9 +23,9 @@ export default {
       },
       {
           name: "post",
-          type: 'reference',
+          type: "reference",
           to: [{ type: "post"}],
-      }
+      },
     ],
-}
+};
   
