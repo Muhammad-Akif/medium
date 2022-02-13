@@ -164,6 +164,20 @@ const Post = ({ post }: Props) => {
                     </form >
                 )}
 
+            {/* comments */}
+            <div>
+                <h3></h3>
+                <hr />
+
+                { post.comments.map((comment) => (
+                    <div key={comment._id}>
+                        <p>
+                            <span>{comment.name}</span>
+                            {comment.comment}
+                        </p>
+                    </div>
+                ))}
+            </div>
         </main >
     )
 }
