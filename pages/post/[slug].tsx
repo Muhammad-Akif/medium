@@ -121,23 +121,24 @@ const Post = ({ post }: Props) => {
                     />
                 </label>
 
+                {/* errors will return field validation fails */}
+                <div className="flex flex-col p-5">
+                    {errors.name && (
+                        <span className="text-red-500">~ The Name Field is required</span>
+                    )}
+                    {errors.email && (
+                        <span className="text-red-500">~ The Email Field is required</span>
+                    )}
+                    {errors.comment && (
+                        <span className="text-red-500">~ The Comment Field is required</span>
+                    )}
+                </div>
+                
                 <input
                     type="submit"
                     className=" shadow bg-yellow-500 hover:bg-yellow-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded cursor-pointer "
                 />
 
-                {/* errors will return field validation fails */}
-                <div className="flex flex-col p-5">
-                    {errors.name && (
-                        <span>~ The Name Field is required</span>
-                    )}
-                    {errors.email && (
-                        <span>~ The Email Field is required</span>
-                    )}
-                    {errors.comment && (
-                        <span>~ The Comment Field is required</span>
-                    )}
-                </div>
             </form>
         </main>
     )
