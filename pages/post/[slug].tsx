@@ -21,7 +21,7 @@ const Post = ({ post }: Props) => {
     const {
         register,
         handleSubmit,
-        formState: {errors},
+        formState: { errors },
     } = useForm<IFormInput>();
 
     return (
@@ -83,9 +83,17 @@ const Post = ({ post }: Props) => {
                 <h4 className="text-3xl font-bold">Leave a comment below!</h4>
                 <hr className="py-3 mt-2" />
 
+                <input
+                    {...register("_id")}
+                    type="hidden"
+                    name="_id"
+                    value={post._id}
+                />
+
                 <label className="block mb-5">
                     <span className="text-gray-700">Name</span>
                     <input
+                        {...register("name", { required: true })}
                         className="shadow border rounded py-2 px-3 form-input mt-1 block w-full ring-yellow-500 focus:ring outline-none"
                         type="text"
                         placeholder="Muhammad Akif"
@@ -94,6 +102,7 @@ const Post = ({ post }: Props) => {
                 <label className="block mb-5">
                     <span className="text-gray-700">Email</span>
                     <input
+                        {...register("email", { required: true })}
                         className="shadow border rounded py-2 px-3 form-input mt-1 block w-full ring-yellow-500 focus:ring outline-none"
                         type="email"
                         placeholder="abc@gmail.com"
@@ -102,6 +111,7 @@ const Post = ({ post }: Props) => {
                 <label className="block mb-5">
                     <span className="text-gray-700">Comment</span>
                     <textarea
+                        {...register("comment", { required: true })}
                         className="shadow border rounded py-2 px-3 form-textarea mt-1 block w-full ring-yellow-500 focus:ring outline-none"
                         placeholder="what's in your mind?"
                         rows={8}
