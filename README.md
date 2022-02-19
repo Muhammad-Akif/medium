@@ -1,2 +1,2 @@
 # Medium
-Medium Web with Next.js, TypeScript, Sanity CMS, React, Tailwind CSS, ISR,
+Medium Web with Next.js, TypeScript, Sanity CMS, React, Tailwind CSS, ISR.
