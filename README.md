@@ -3,6 +3,7 @@
 ## Technologies
 Project is created with 
 * React Framework (Next.js) 
+* SSR, SSG, ISR approaches
 * TypeScript
 * Sanity CMS
 * Tailwind CSS. 
