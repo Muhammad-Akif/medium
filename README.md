@@ -1,7 +1,7 @@
 # Medium Web
 
 # Introduction
-This is a Medium App [Live](https://dnorganizers.web.app).
+This is a Medium App [Live](https://ibb.co/RDsXX8N).
 It is an Article publishing app same like "Medium", post and read articles. Write comments, filteration and much more...
 
 ## Technologies
