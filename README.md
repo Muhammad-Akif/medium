@@ -15,4 +15,4 @@ Project is created with
 * Tailwind CSS. 
 
 ## Setup:
-$ run `npm i && npm start || yarn i && yarn start` for starting the application.
+$ run `npm i && npm run dev || yarn i && yarn run dev` for starting the application.
