@@ -1,6 +1,6 @@
 # Medium Web
 
-[![dnOrg.png](https://ibb.co/RDsXX8N)](https://postimg.cc/ctd4jWFk)
+[![medium.png](https://i.postimg.cc/J7krYhRR/medium.png)](https://postimg.cc/pyPMpR9S)
 
 # Introduction
 This is a Medium App [Live](https://ibb.co/RDsXX8N).
