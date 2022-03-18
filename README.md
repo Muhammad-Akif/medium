@@ -3,7 +3,7 @@
 [![medium.png](https://i.postimg.cc/J7krYhRR/medium.png)](https://postimg.cc/pyPMpR9S)
 
 # Introduction
-This is a Medium App [Live](http://medium-nine.vercel.app/).
+This is a Medium App [Live](https://readmedium.vercel.app).
 It is an Article publishing app same like "Medium", post and read articles. Write comments, filteration and much more...
 
 ## Technologies
