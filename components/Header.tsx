@@ -1,19 +1,16 @@
-// import Link from 'next/link'
-import { useRouter } from 'next/router'
+import Link from 'next/link'
 
 const Header = () => {
-  const router = useRouter();
 
   return (
   <header className="flex justify-between p-5">
       <div className="flex items-center space-x-5">
-          {/* <Link href="/"> */}
+          <Link href="/">
              <img 
-             onClick={() => router.push(`/`)}
              className="w-44 object-contain cursor-pointer"
              src="https://links.papareact.com/yvf" 
              alt="logo" />
-          {/* </Link> */}
+          </Link>
           <div className="hidden md:inline-flex items-center space-x-5">
               <h3>About</h3>
               <h3>Contact</h3>
